@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>鉄骨製作管理技術者 試験対策アプリ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Sans+Myanmar:wght@400;500;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Poppins', 'Noto Sans Myanmar', 'Noto Sans JP', 'sans-serif'],
+            },
+            colors: {
+              'neumorphic-bg': '#e0e0e0',
+              'neumorphic-text': '#5a6472',
+              'neumorphic-shadow-dark': '#a3b1c6',
+              'neumorphic-shadow-light': '#ffffff',
+            },
+            boxShadow: {
+              'neumorphic-outset': '8px 8px 16px #a3b1c6, -8px -8px 16px #ffffff',
+              'neumorphic-inset': 'inset 8px 8px 16px #a3b1c6, inset -8px -8px 16px #ffffff',
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      /* Fluid root font-size for better scaling across all devices */
+      html {
+        /* Scales smoothly from 14px on small mobile to 18px on large desktop screens */
+        font-size: clamp(0.875rem, 0.579rem + 0.781vw, 1.125rem);
+      }
+
+      /* Custom styles for Furigana (ruby characters) */
+      ruby {
+        font-family: inherit;
+        font-size: inherit;
+      }
+      rt {
+        font-size: 0.6em;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        opacity: 0.9;
+        font-weight: 500;
+        text-align: center;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.26.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-neumorphic-bg font-sans antialiased text-neumorphic-text">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,5 @@
+{
+  "name": "Japanese Structural Engineering Exam Study App",
+  "description": "A private web application for studying Japanese building codes with questions and explanations in both Japanese and Burmese. Access is protected by a simple passcode.",
+  "requestFramePermissions": []
+}
